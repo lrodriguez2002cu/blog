@@ -48,7 +48,7 @@ jobs:
       - name: Build with Jekyll
         working-directory: ./blog-site
         # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" -d ../_site
         env:
           JEKYLL_ENV: production
           PAGES_REPO_NWO: ${{ github.repository }}
