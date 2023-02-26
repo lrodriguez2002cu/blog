@@ -75,3 +75,9 @@ excerpt_separator: <!--more-->
 
 head_scripts:
   - /assets/js/copy-content.js
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-M4R4750K49"
+    anonymize_ip: false # default
